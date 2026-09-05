@@ -14,9 +14,9 @@ public sealed class CreateRoomHandler
         RoomServiceResolver roomServiceResolver,
         IUnitOfWork unitOfWork)
     {
-        _roomRepository = roomRepository;
-        _roomServiceResolver = roomServiceResolver;
-        _unitOfWork = unitOfWork;
+        _roomRepository = roomRepository ?? throw new ArgumentNullException(nameof(roomRepository));
+        _roomServiceResolver = roomServiceResolver ?? throw new ArgumentNullException(nameof(roomServiceResolver));
+        _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
     }
 
     public async Task<Guid> HandleAsync(
