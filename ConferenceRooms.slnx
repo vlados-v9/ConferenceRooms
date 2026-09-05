@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ConferenceRooms.Api/ConferenceRooms.Api.csproj" />
+  <Project Path="ConferenceRooms.Application/ConferenceRooms.Application.csproj" />
+  <Project Path="ConferenceRooms.Domain/ConferenceRooms.Domain.csproj" />
+  <Project Path="ConferenceRooms.Infrastructure/ConferenceRooms.Infrastructure.csproj" />
+</Solution>
